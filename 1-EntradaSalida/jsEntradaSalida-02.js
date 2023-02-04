@@ -6,7 +6,7 @@ y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
 	var pedirNombre; 
-	//utilizar camelCase// //una "var" (variable) es un espacio de memoria donde podemos reservar cualquer cosa, tambien se puede usar "let"//
+	//utilizar low-camelCase// //una "var" (variable) es un espacio de memoria donde podemos reservar cualquer cosa, tambien se puede usar "let"//
 	
 	pedirNombre = prompt("Por favor ingrese su nombre"); 
 	//al poner el nombre de la variable mas "=" podemos hacer que lo que se escriba en el prompt se guarde en esa variable, para ver lo que ponen en el prompt (input) tenemos que utilizar el debugger//

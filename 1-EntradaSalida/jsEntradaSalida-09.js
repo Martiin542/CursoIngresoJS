@@ -1,20 +1,21 @@
-/*
-Debemos lograr tomar el importe por ID ,
-transformarlo a entero (parseInt), luego
-mostrar el importe con un aumento del 10 %
-en el cuadro de texto "RESULTADO".*/
+/*9 BIS : Debemos lograr tomar el importe por ID ,transformarlo a entero (parseInt), y tambien 
+pedirle al usuario mediante una entrada de datos cual es el aumento a realizar, 
+y luego mostrar el importe con el aumento en el TextBox"RESULTADO".*/
 function mostrarAumento()
 {
 	var sueldo;
-	var aumento;
-	var nuevoSueldo; 
-	
+	var pedirAumento;
+	var sueldoAumentado;
+	var resultado;
+
 	sueldo = document.getElementById("txtIdSueldo").value;
+	pedirAumento = prompt("Especificar el aumento");
 
-	sueldo = parseInt(sueldo); //nunca olvidr cambiar a Int
-	
-	aumento = sueldo * (10 / 100); //para calcular el desceunto hay que multiplicarle a el numero inicial la cantidad de descuento dividio 100
-	nuevoSueldo = sueldo + aumento; // luego si queremos indicar un aumento hay que sumarlo
+	sueldo = parseFloat(sueldo);
+	pedirAumento = parseFloat(pedirAumento);
 
-	document.getElementById("txtIdResultado").value = nuevoSueldo
+	sueldoAumentado = sueldo * (pedirAumento/100);
+	resultado = sueldo + sueldoAumentado;
+
+	document.getElementById("txtIdResultado").value = resultado;
 }

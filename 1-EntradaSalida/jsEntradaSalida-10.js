@@ -1,18 +1,26 @@
 /*
-Debemos lograr tomar el importe por ID.
-Transformarlo a entero (parseInt), luego
-mostrar el importe con un Descuento del 25 %
-en el cuadro de texto "RESULTADO"*/
+10 BIS: Debemos lograr tomar el importe por ID ,transformarlo
+ a entero (parseInt),y tambien pedirle al usuario mediante una entrada de 
+ datos cual es el descuento a realizar, y luego mostrar el importe final con 
+ el descuento en el TextBox y el descuento realizado en un Alert.
+ */
 function mostrarAumento()
 {
-	var importe;
-	var descuento;
+	// 
+	var importeIngresado;
+	var descuentoIngresado;
+	var importeConDescuento;
 	var resultado;
-
-	importe = document.getElementById("txtIdImporte").value
-	importe = parseInt(importe);
-	descuento = importe * (25/100); //explicado en el ejercicio 9
-	resultado = importe - descuento; //en este caso como se querie indicar un descuento es necesario restrarlo
-	
-	document.getElementById("txtIdResultado").value = resultado; 
+	// 
+	importeIngresado = document.getElementById("txtIdImporte").value;
+	descuentoIngresado = prompt("Especificar el descuento");
+	//
+	importeIngresado = parseFloat(importeIngresado);
+	descuentoIngresado = parseFloat(descuentoIngresado)
+	//
+	importeConDescuento = importeIngresado * (descuentoIngresado/100);
+	resultado = importeIngresado - importeConDescuento; 
+	//
+	document.getElementById("txtIdResultado").value = resultado;
+	alert("El descuento aplicado fue de un " + importeConDescuento + " pesos");
 }

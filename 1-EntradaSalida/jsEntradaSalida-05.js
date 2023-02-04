@@ -11,7 +11,7 @@ function mostrar()
 	nombreIngresado = document.getElementById("txtIdNombre").value;
 	edadIngresada = document.getElementById("txtIdEdad").value;
 
-	alert("Te es: " + nombreIngresado + " Tu edad es: " + edadIngresada + " años");
+	alert("usted se llama " + nombreIngresado + " y tiene " + edadIngresada + " años");
 
-}
+} //en el caso de tener un error fijarse en el debugger
 

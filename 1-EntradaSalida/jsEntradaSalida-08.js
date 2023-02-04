@@ -12,10 +12,10 @@ function SacarResto()
 	dividendo = document.getElementById("txtIdNumeroDividendo").value;
 	divisor = document.getElementById("txtIdNumeroDivisor").value;
 
-	dividendo = parseInt(dividendo);
-	divisor = parseInt(divisor);
+	dividendo = parseFloat(dividendo);
+	divisor = parseFloat(divisor);
+	
 	resultado = dividendo % divisor; //para mostrar el resto se utiliza el operador de porcentaje (%)//
  	
-	alert("el resto es: " + resultado)
-
+	alert("el resto es: " + resultado);
 }
